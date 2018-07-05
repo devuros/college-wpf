@@ -1,0 +1,64 @@
+﻿<Window x:Class="Stopwatch.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Stopwatch" 
+        Height="350" 
+        Width="525">
+    <DockPanel>
+        <!-- Top section -->
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="_File">
+                <MenuItem Name="mFileSaveAs" Header="Save as..." Click="mFileSaveAs_Click"></MenuItem>
+                <Separator />
+                <MenuItem Name="mFileExit" Header="Exit" Click="mFileExit_Click"></MenuItem>
+            </MenuItem>
+            <MenuItem Header="Tools">
+                <MenuItem Name="mToolsOptions" Header="Options..." Click="mToolsOptions_Click"/>
+            </MenuItem>
+            <MenuItem Header="Help">
+                <MenuItem Name="mHelpAbout" Header="About" Click="mHelpAbout_Click"></MenuItem>
+            </MenuItem>
+        </Menu>
+        <!-- Bottom section -->
+        <StatusBar DockPanel.Dock="Bottom">
+            <StatusBarItem>
+                <!-- {} ispred Split znaci da to nije markup Extension -->
+                <TextBlock Name="txtSplitTimesCount" Text="{Binding Path=SplitTimes.Count, StringFormat={}Split times count: {0}}" />
+            </StatusBarItem>
+        </StatusBar>
+        <!-- Middle section -->
+        <Grid DockPanel.Dock="Left">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <!--
+                Umesto ListBox controle moze da se koristi <ItemsControl> koji nema selekciju kao ListBox
+            -->
+            <ListBox Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" ItemsSource="{Binding Path=SplitTimes}" ItemStringFormat="hh\:mm\:ss\.ff"/>
+            
+            <Button Name="btnStart" Margin="5" Grid.Row="1" Grid.Column="0" Content="Start" Click="btnStart_Click" />
+            <Button Name="btnAdd" Margin="5" Grid.Row="1" Grid.Column="1" Content="Add" Click="btnAdd_Click"/>
+            <Button Name="btnStop" Margin="5" Grid.Row="2" Grid.Column="0" Click="btnStop_Click" IsEnabled="False">
+                <StackPanel Orientation="Horizontal">
+                    <Rectangle Width="10" Height="10" Fill="Black"/>
+                    <TextBlock Text="Stop"></TextBlock>
+                </StackPanel>
+            </Button>
+            <Button Name="btnReset" Margin="5" Grid.Row="2" Grid.Column="1" Click="btnReset_Click">
+                <Button.Content>Reset</Button.Content>
+            </Button>
+        </Grid>
+        <!-- Grid stoji oko ViewBox-a da bi mogao da mu se dodeli background color nakon odabira iz ColorPicker-a. -->
+        <Grid Name="grdDisplay" Background="White">
+            <Viewbox Stretch="Uniform">
+                <TextBlock Name="txtDisplay" Text="{Binding Path=Stopwatch.Elapsed, StringFormat=hh\\:mm\\:ss\\.ff}" />
+            </Viewbox>
+        </Grid>
+    </DockPanel>
+</Window>

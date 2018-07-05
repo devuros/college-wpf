@@ -1,0 +1,35 @@
+C:\Users\Uki\Documents\Visual Studio 2013\Projects\AddressBookMoj\AddressBookMoj\bin\Debug\AddressBookMoj.exe.config
+C:\Users\Uki\Documents\Visual Studio 2013\Projects\AddressBookMoj\AddressBookMoj\bin\Debug\AddressBookMoj.exe
+C:\Users\Uki\Documents\Visual Studio 2013\Projects\AddressBookMoj\AddressBookMoj\bin\Debug\AddressBookMoj.pdb
+C:\Users\Uki\Documents\Visual Studio 2013\Projects\AddressBookMoj\AddressBookMoj\obj\Debug\MainWindow.baml
+C:\Users\Uki\Documents\Visual Studio 2013\Projects\AddressBookMoj\AddressBookMoj\obj\Debug\MainWindow.g.cs
+C:\Users\Uki\Documents\Visual Studio 2013\Projects\AddressBookMoj\AddressBookMoj\obj\Debug\App.g.cs
+C:\Users\Uki\Documents\Visual Studio 2013\Projects\AddressBookMoj\AddressBookMoj\obj\Debug\AddressBookMoj_MarkupCompile.cache
+C:\Users\Uki\Documents\Visual Studio 2013\Projects\AddressBookMoj\AddressBookMoj\obj\Debug\AddressBookMoj.g.resources
+C:\Users\Uki\Documents\Visual Studio 2013\Projects\AddressBookMoj\AddressBookMoj\obj\Debug\AddressBookMoj.Properties.Resources.resources
+C:\Users\Uki\Documents\Visual Studio 2013\Projects\AddressBookMoj\AddressBookMoj\obj\Debug\AddressBookMoj.csproj.GenerateResource.Cache
+C:\Users\Uki\Documents\Visual Studio 2013\Projects\AddressBookMoj\AddressBookMoj\obj\Debug\AddressBookMoj.exe
+C:\Users\Uki\Documents\Visual Studio 2013\Projects\AddressBookMoj\AddressBookMoj\obj\Debug\AddressBookMoj.pdb
+C:\Users\Uki\Documents\Visual Studio 2013\Projects\AddressBookMoj\AddressBookMoj\obj\Debug\AddressBookMoj_MarkupCompile.lref
+C:\Users\Uki\Documents\Visual Studio 2013\Projects\AddressBookMoj\AddressBookMoj\obj\Debug\PersonDialog.g.cs
+C:\Users\Uki\Documents\Visual Studio 2013\Projects\AddressBookMoj\AddressBookMoj\obj\Debug\PersonDialog.baml
+C:\Users\Uki\Documents\Visual Studio 2013\Projects\AddressBookMoj\AddressBookMoj\obj\Debug\AddressBookMoj.csprojResolveAssemblyReference.cache
+D:\Urion\Sites\Wpf-projects\AddressBookMoj\AddressBookMoj\bin\Debug\AddressBookMoj.exe.config
+D:\Urion\Sites\Wpf-projects\AddressBookMoj\AddressBookMoj\obj\Debug\AddressBookMoj.exe
+D:\Urion\Sites\Wpf-projects\AddressBookMoj\AddressBookMoj\obj\Debug\AddressBookMoj.pdb
+D:\Urion\Sites\Wpf-projects\AddressBookMoj\AddressBookMoj\bin\Debug\AddressBookMoj.exe
+D:\Urion\Sites\Wpf-projects\AddressBookMoj\AddressBookMoj\bin\Debug\AddressBookMoj.pdb
+D:\Urion\Sites\Wpf-projects\AddressBookMoj\AddressBookMoj\obj\Debug\AddressBookMoj.csprojResolveAssemblyReference.cache
+D:\Urion\Sites\Wpf-projects\AddressBookMoj\AddressBookMoj\obj\Debug\MainWindow.g.cs
+D:\Urion\Sites\Wpf-projects\AddressBookMoj\AddressBookMoj\obj\Debug\PersonDialog.g.cs
+D:\Urion\Sites\Wpf-projects\AddressBookMoj\AddressBookMoj\obj\Debug\App.g.cs
+D:\Urion\Sites\Wpf-projects\AddressBookMoj\AddressBookMoj\obj\Debug\AddressBookMoj_MarkupCompile.cache
+D:\Urion\Sites\Wpf-projects\AddressBookMoj\AddressBookMoj\obj\Debug\AddressBookMoj_MarkupCompile.lref
+D:\Urion\Sites\Wpf-projects\AddressBookMoj\AddressBookMoj\obj\Debug\MainWindow.baml
+D:\Urion\Sites\Wpf-projects\AddressBookMoj\AddressBookMoj\obj\Debug\PersonDialog.baml
+D:\Urion\Sites\Wpf-projects\AddressBookMoj\AddressBookMoj\obj\Debug\AddressBookMoj.g.resources
+D:\Urion\Sites\Wpf-projects\AddressBookMoj\AddressBookMoj\obj\Debug\AddressBookMoj.Properties.Resources.resources
+D:\Urion\Sites\Wpf-projects\AddressBookMoj\AddressBookMoj\obj\Debug\AddressBookMoj.csproj.GenerateResource.Cache
+D:\Urion\college-wpf\AddressBookMoj\AddressBookMoj\bin\Debug\AddressBookMoj.exe.config
+D:\Urion\college-wpf\AddressBookMoj\AddressBookMoj\obj\Debug\AddressBookMoj.exe
+D:\Urion\college-wpf\AddressBookMoj\AddressBookMoj\obj\Debug\AddressBookMoj.pdb

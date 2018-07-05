@@ -1,0 +1,95 @@
+﻿<Window x:Class="AddressBookMoj.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:local="clr-namespace:AddressBookMoj"
+        Title="MainWindow" 
+        Height="700" Width="1050">
+    <Grid>
+        <Grid.RowDefinitions >
+            <RowDefinition  Height="Auto" />
+            <RowDefinition  Height="Auto" />
+            <RowDefinition  Height="*" />
+            <RowDefinition  Height="Auto" />  
+        </Grid.RowDefinitions>
+        
+        <Menu Grid.Row="0">
+            <MenuItem Header="File">
+                <MenuItem Header="Exit" Command="{Binding ExitCommand}"/> 
+            </MenuItem>
+            <MenuItem Header="_Perons">
+                <MenuItem Header="_Add" Command="{Binding AddCommand}" />
+                <MenuItem Header="_Remove" Command="{Binding RemoveCommand}"/>
+            </MenuItem>
+        </Menu>
+        <ToolBarTray Grid.Row="1">
+            <ToolBar>
+                <Button>Open</Button>
+                <Button>Save as</Button>
+            </ToolBar>
+        </ToolBarTray>
+        
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition MinWidth="200" Width="Auto"/>
+                <ColumnDefinition  Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <ListBox Grid.Column="0" ItemsSource="{Binding Path=Adresar.Persons}" IsSynchronizedWithCurrentItem="True">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Vertical">
+                            <StackPanel Orientation="Horizontal">
+                                <Ellipse Fill="Black" Width="10" Height="10" Margin="3"></Ellipse>
+                                <TextBlock Text="{Binding Path=Name}"></TextBlock>
+                            </StackPanel>
+                            <TextBlock Text="{Binding Path=Birthdate}"></TextBlock>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions >
+                    <RowDefinition  Height="Auto" />
+                    <RowDefinition  Height="Auto" />
+                    <RowDefinition  Height="Auto" />
+                    <RowDefinition  Height="Auto" />
+                    <RowDefinition  Height="Auto" />
+                    <RowDefinition  Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                
+                    <Label Grid.Row="0" Grid.Column="0">Name:</Label>
+                    <Label Grid.Row="1" Grid.Column="0">Birthdate:</Label>
+                    <Label Grid.Row="2" Grid.Column="0">Height:</Label>
+                    <Label Grid.Row="3" Grid.Column="0">Age:</Label>
+                    <Label Grid.Row="4" Grid.Column="0">Gender:</Label>
+                
+                    <TextBox Grid.Row="0" Grid.Column="1" Text="{Binding Path=Adresar.Persons/Name}"></TextBox>
+                    <DatePicker Grid.Row="1" Grid.Column="1" SelectedDate="{Binding Path=Adresar.Persons/Birthdate}"></DatePicker>
+                    <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding Path=Adresar.Persons/Height}"></TextBox>
+                    <TextBlock Grid.Row="3" Grid.Column="1" Text="{Binding Path=Adresar.Persons/Age}"></TextBlock>
+                    <ComboBox Grid.Row="4" Grid.Column="1" 
+                              ItemsSource="{x:Static local:Gender.Genders}"
+                              SelectedItem="{Binding Path=Adresar.Persons/Gender}"></ComboBox>
+
+                    <DataGrid Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" AutoGenerateColumns="False"
+                              ItemsSource="{Binding Path=Adresar.Persons/Adrese}">
+                        <DataGrid.Columns>
+                            <DataGridTextColumn  Header="StreetName" Width="*" Binding="{Binding Path=StrName}"/>
+                            <DataGridTextColumn Header="No." Width="Auto" Binding="{Binding Path=StrNumber}"/>
+                        </DataGrid.Columns>
+                    </DataGrid>
+                
+            </Grid>
+            
+        </Grid>
+        <StatusBar Grid.Row="3">
+            <TextBlock Text="{Binding Path=Adresar.Persons.Count, StringFormat={}Persons count: {0}}"></TextBlock>
+        </StatusBar>
+        
+    </Grid>
+</Window>
